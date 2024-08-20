@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/aksmweb-a8516.appspot.com/o/aksm_logo.png?alt=media&token=2465da49-283b-44b0-a8ea-fa8b36ecebf1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-<latest-integrity-value>" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>AKSM</title>
+    <script src="nav.js" ></script>
+
+</head>
+
+<body>
+
+    <div id="menu-container"></div>
+
+
+    <script>
+        // Load header.html and nav.js sequentially
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+
+                // Insert the nav.js script dynamically
+                const script = document.createElement('script');
+                script.src = 'nav.js';
+                script.async = false;  // Ensures execution order
+                document.body.appendChild(script);
+            });
+
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+
+
+    <div class="video-container">
+        
+        <div class="content">
+
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="https://firebasestorage.googleapis.com/v0/b/aksmweb-a8516.appspot.com/o/video.mp4?alt=media&token=e6729155-ca71-4645-a52c-3557b44f6f3a" type="video/mp4">
+            </video>
+
+            <div class="filter"></div>
+
+            <div class="cen">
+                <a href="https://www.aksm.gr/wp-content/uploads/2023/12/aksm_antagonistikotita_webEN.pdf" target="_blank">
+                <img src="assets/e-bannerespaEÆÅÇ460X60.jpg" class="logo_espa" alt=" ">
+                </a>
+            </div>
+                
+
+            
+
+                <div class="center">
+                        <img src="assets/aksm_logo.png" class="logo_big" >
+                </div>
+
+                <hr class="separator--line">
+
+                <h1 class="heading-contai">Where Construction Meets Technology</h1>
+                
+                <a href="contact.html" class="button">
+
+                    <a href="contact.html" style="text-decoration: none;" >
+
+                        <div class="box-1">
+                            <div class="btn btn-one" id="front_page">
+                              <span>Contact us</span>
+                            </div>
+                        </div>
+                    </a>            
+            </div>
+
+    </div>
+
+    <div class="about_us">
+        <div class="heropanel__content">
+            <h1><a href="/" rel="home">About Us</a></h1>
+            <p>Why Choose Us</p>
+        </div>
+    
+        <div class="flex_container">
+            <div class="text-left">
+                <p>Our company was founded in 2001 under the name of Alexandros Karditsas & Partners
+                    to offer finalized solutions in the area of surveying, industrial and special
+                    geodetic applications along with the provision of services in the technical and
+                    constructional sector. </p>
+            </div>
+    
+            <div id="wrapper1" class="wrapper">
+                <div id="content-wrapper">
+                    <img src="assets/constructionhat.svg" alt="Icon" class="icon">
+                    <div>
+                        <h1 id="counter1" class="counter">0</h1>
+                        <div class="additional-text">
+                            <p>Years Of Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-separator"></div> <!-- Vertical separator 1 -->
+            </div>
+        </div>
+    
+        <div class="flex_container">
+            <div id="wrapper2" class="wrapper">
+                <div id="content-wrapper2">
+                    <img src="assets/jobs.png" alt="Icon" class="icon">
+                    <div>
+                        <h1 id="counter2" class="counter">1400</h1>
+                        <div class="additional-text">
+                            <p>Jobs Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-separator2"></div> <!-- Vertical separator 2 -->
+            </div>
+            <div class="text-right">
+                <div class="b_color">
+                    <p>Our office is activated with a particular performance and
+                        experience in issues which concern at general surveying
+                        work site support of every building structure.
+                        Our personnel consists of specified engineers with many years
+                        of experience in large construction projects. </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex_container" >
+            <div class="text-left">
+                <p>
+                    By using high precision  equipment, software and methodologies 
+                    and with many years of experience,  we can provide accurate results, 
+                    in order to meet the requirements of  delicate projects.Following the 
+                    European breakthrough, AKSM has applied the Quality Control system
+                    according to the standard ISO 9001:2008.
+                    </p>
+            </div>
+            <div id="wrapper3" class="wrapper">
+                <div id="content-wrapper">
+                    <img src="assets/employee.png" alt="Icon" class="icon">
+                    <div>
+                        <h1 id="counter3" class="counter">0</h1>
+                        <div class="additional-text">
+                            <p>Employees</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="vertical-separator">
+                
+            </div>
+        </div>
+        
+        <div class="project">
+            <h2 style="color: #817C76;">CUSTOMERS</h2>
+            <div class="line2" >
+              <div class="c_line3" style="background-color: #817C76;"></div>
+              <div class="c_line4" style="background-color: #817C76;"></div>
+            </div>
+        </div>
+
+        
+        <div class="scroller" data-direction="right" data-speed="slow">
+            <div class="scroller__inner">
+            <div class="circle"><img src="assets/constumers/LOGOS/LOGOS/stfa.jpg" alt="STFA" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/LOGOS/LOGO_TOSONI.jpg" alt="tosoni" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/LOGOS/LOGO_village_roadshow.jpg" alt="village_cinema" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/LOGOS/alja.jpg" alt="alja" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/LOGOS/Yapi_Merkezi.jpg" alt="Yapi_Merkezi" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/LOGOS/l&-T-logo.jpg" alt="I&T" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/LOGOS/logo_aktor_en.jpg" alt="aktor" /></div>
+            
+            <div class="circle"><img src="assets/constumers/LOGOS/LOGOS/alysj.jpg" alt="alysj" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/epalme.bmp" alt="epalme" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/EOLFI.jpg" alt="eolfi" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/EMEK.JPG" alt="emek" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/ELMEC SPORT.jpg" alt="emelksport" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/DSTEEL.jpg" alt="steel" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/DIMAND.JPG" alt="dimand" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/CYCLON.jpg" alt="cyclon" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/CORE.JPG" alt="core" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/BIC.jpg" alt="bic" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/BEMEKEP.JPG" alt="bemekep" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/ARKTEAM.JPG" alt="arkteam" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/ARCON. CONST..jpg" alt="arcon" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/ALUMAN.JPG" alt="aluman" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/ALSTOM.jpg" alt="alstom" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/alex pak.bmp" alt="alex_pak" /></div>
+
+            <div class="circle"><img src="https://firebasestorage.googleapis.com/v0/b/aksmweb-a8516.appspot.com/o/costumers%2FAKTWR.jpg?alt=media&token=ec45bbea-ecbb-468c-8061-e3855fbc7fa5" alt="aktvr" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/ZINON ATH..JPG" alt="zinon" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/YPOURGEIO DHMOSIAS TAXIS.JPG" alt="ypoyrgeio" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/xalyvourgiki.jpg" alt="xalivourgiki" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/village cinemas1.bmp" alt="village_cinema" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/TERNA.jpg" alt="terna" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/terkenlis1.jpg" alt="terkenlis" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/SWLIN. KORINTHOU.jpg" alt="svlin" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/sidma ae1.jpg" alt="sidma" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/SANYO HELLAS.jpg" alt="sanyo" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/SAMIA INTERNATIONAL.JPG" alt="samia" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/panelco.bmp" alt="panelco" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/MOXLOS.jpg" alt="moxlos" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/METRON.JPG" alt="metron" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/METKA.jpg" alt="metka" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/maillis.jpg" alt="maillis" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/LEROY MERLIN.jpg" alt="leroi" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/lamda development2.bmp" alt="lamda" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/kosmocar.bmp" alt="kosmocar" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/KOCH + PARTNERS.JPG" alt="koch + partners" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/karenta ae.jpg" alt="karenta" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/intrakat.jpg" alt="intrakat" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/IMBREGILO.jpg" alt="IMBREGILO" /></div>
+            
+            <div class="circle"><img src="assets/constumers/LOGOS/h & m.jpg" alt="h&m" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/FOKAS.JPG" alt="fokas" /></div>
+
+            <div class="circle"><img src="assets/constumers/LOGOS/FOCAL.JPG" alt="focal" /></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="news">
+
+        <div class="news-container">
+            <div class="news-carousel">
+                <div class="controls">
+                    <button class="prev"></button>
+                    <button class="next"></button>
+                </div>
+                <div class="slider">
+                    
+                <section>
+                    <div class="news-section">
+                    <div class="content-left">
+                        <div class="content-text">
+                        <h2 class="center">BHMA Article Publication With AKSM!</h2> 
+                        <div class="vertical-line-container">
+                            <div class="vertical-line"></div>
+                            <p>
+                            <b>"AKSM offers modern BIM, Scan2BIM and Augmented & Mixed Reality
+                                    applications", points out the head of the company, Alexandros 
+                                    Karditsas.</b><br><br> "Using Laser Scanning technology and Scan2BIM, we 
+                                    enable a reliable and detailed documentation of the project, 
+                                    through 3D imaging. Thus, an integrated record of the 
+                                    construction can be created, with all its individual elements 
+                                    (static, architectural, MEP) while we have the possibility to
+                                    extract from it useful metric data including quality 
+                                    characteristics”.</p>
+                                <div class="caption-info">
+                                    <span class="caption-text">February 14, 2024</span>
+                                </div>
+                        </div>
+                        
+                        </div>
+                        </div>
+                        <div class="content-right">
+                          <div class="big-image-wrapper">
+                            <img src="assets/aksm_news_5.jpg" alt="Image 1">
+
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                        <div class="news-section">
+                        <div class="content-left">
+                            <div class="content-text">
+                            <h2 class="center">JOB OPPORTUNITIES</h2> 
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+                                <p>
+                                <b>AKSM believes in talented students and plans for 
+                                    its own future by investing in them. Joining AKSM 
+                                    will provide you unparalleled learning experiences
+                                     which will help unlock your potential to transform 
+                                     learned theories into practice.</b><br>
+                                    Determination, courage and resiliency are some of the 
+                                    best qualities AKSM looks for in graduates and undergraduates,
+                                     offering you indispensable internships which aimed for
+                                      your professional development to hone your acquired
+                                       knowledge during your studies.
+                                    Many of our current employees were those talented students
+                                     who made a very good choice to join AKSM for their internship
+                                      and have continued their successful career as part of our team.
+                                    
+                                    Join us and make a difference.
+                                        characteristics”.</p>
+
+                            </div>
+                            
+                            </div>
+                            </div>
+                            <div class="content-right">
+                              <div class="big-image-wrapper">
+                                <img src="assets/aksm_img2.jpg" alt="Image 1">
+                                <a href="contact.html" style="text-decoration: none;" >
+
+                                    <div class="box-1"style="padding-top: 10px;">
+                                        <div class="btn btn-one" id="front_page">
+                                          <span>Contact us</span>
+                                        </div>
+                                    </div>
+                                </a>     
+
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+          
+        <div class="container_services">
+
+
+            <div class="heading-container second" style="padding-top: 0;">
+                <h1 class="head">SERVICES
+                </h1>
+                <div class="animated-line-container2">
+                    <div class="animated-line2">
+    
+                    </div>
+                </div>
+                <p>Building with precision and innovation</p>
+
+            </div>
+
+
+            <div class="row">
+                <a href="services.html#scan2bim-section">
+                <div class="service"onmouseover="changeImage(this, 'assets/backround_img/3dcube_white.svg')" onmouseout="restoreImage(this, 'assets/backround_img/3dcube.svg')">
+                    <img src="assets/backround_img/3dcube.svg">
+                    <h3>SCAN2BIM</h3>
+                </div>
+                </a>
+                <a href="services.html#deformation-monitoring">
+                <div class="service"onmouseover="changeImage(this, 'assets/backround_img/deformation_white.svg')" onmouseout="restoreImage(this, 'assets/backround_img/deformation.svg')">
+                    <img src="assets/backround_img/deformation.svg" >
+                    <h3>Deformation Monitoring</h3>
+                </div>
+                </a>
+                <a href="services.html#ci_surveying">
+                <div class="service" onmouseover="changeImage(this, 'assets/backround_img/const_indwhite.svg')" onmouseout="restoreImage(this, 'assets/backround_img/const_ind_icon.svg')">
+                    <img src="assets/backround_img/const_ind_icon.svg" >
+                    <h3>Construction & Industrial Surveying</h3>
+                </div>
+                </a>
+                <a href="services.html#UVA_mapping">
+                <div class="service" onmouseover="changeImage(this, 'assets/backround_img/drone_white.svg')" onmouseout="restoreImage(this, 'assets/backround_img/drone.svg')">
+                    <img src="assets/backround_img/drone.svg" >
+                    <h3>UAV Mapping</h3>
+                </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="separator_backround"></div>
+
+
+
+
+        <div class="project-overlay">
+            
+            <div class="project">
+                <h2>OUR LATEST PROJECTS</h2>
+                <div class="line2">
+                  <div class="c_line3"></div>
+                  <div class="c_line4"></div>
+                </div>
+            </div>
+
+
+
+            <div class="port">
+                <div class="project_wrapper">
+                  <i id="left" class="fa-solid fa-angle-left"></i>
+                  <div class="carousel">
+                    
+
+                    <a href="project_details.html?id=img1">
+                        <div class="img__wrap">
+                          <img src="assets/portfolio/agia_napa/agianapafront.jpg" id="img1" alt="img" draggable="false">
+                          <div class="img__description">
+                              Agia Napa, Cyprus <br> CONSTRUCTION SURVEYING
+                          </div>
+                        </div>
+                      </a>
+                      <a href="project_details.html?id=img2">
+                        <div class="img__wrap">
+                          <img src="assets/portfolio/riviera_tower/rivierafront.png" id="img2" alt="img" draggable="false">
+                          <div class="img__description">Riviera Tower<br>CONSTRUCTION SURVEYING</div>
+                        </div>
+                      </a>
+                    <a href="project_details.html?id=img9">
+                      <div class="img__wrap">
+                        <img src="assets/portfolio/stavros_niarxos/stavros_niarxosfront.jpg" alt="img" draggable="false">
+                        <div class="img__description">Stavros Niarchos Foundation<br>Scan2Bim
+                             </div>
+                      </div>
+                    </a>
+                  </div>
+                  <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+              
+
+
+
+  
+              <a href="portfolio.html" style="text-decoration: none;" >
+
+                <div class="box-1">
+                    <div class="btn btn-one">
+                      <span>Our Portfolio</span>
+                    </div>
+                </div></a>
+
+
+                  <div class="animated-line-container">
+                    <div class="animated-line"></div> <!-- New line for animation -->
+                </div>
+
+
+                <div class="newsletter">
+                    <section id="contact">  
+                        <div class="newsletter_wrapper">  
+                            <h2>Our Newsletter</h2>  
+                            <div class="signup-box">  
+                                <fo rm class="signup-form" data-netlify="true">  <!-- Added data-netlify attribute -->
+                                    <label for="email">E-mail:</label>  
+                                    <input type="email" name="email" id="email" class="signup-input" required>  
+                                    
+                                    <label for="name">Name:</label>  
+                                    <input type="text" name="name" id="name" class="signup-input" required>  
+                                    
+                                    <div class="signup-terms">  
+                                        <input type="checkbox" id="terms">  
+                                        <label for="terms">I agree with the terms of use.</label>  
+                                    </div>  
+                                    
+                                    <input type="submit" value="Subscribe">  
+                                </form>  
+                            </div>  
+                        </div>  
+                    </section>  
+                </div>
+                
+                  
+
+        </div>
+
+        <div id="footer__cont"></div>
+
+        
+        <script>
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer__cont').innerHTML = data;
+
+            });
+            
+            document.addEventListener("DOMContentLoaded", function() {
+            const next = document.querySelector('.next');
+            const prev = document.querySelector('.prev');
+            const slider = document.querySelector('.slider');
+            const sections = Array.from(slider.children);
+            let sectionIndex = 0;
+            let startX;
+            let isSwiping = false;
+            let isDragging = false;
+
+            function showSlide(index) {
+                slider.style.transform = `translateX(-${index * 100}%)`;
+            }
+
+            function nextSlide() {
+                sectionIndex = (sectionIndex + 1) % sections.length;
+                showSlide(sectionIndex);
+            }
+
+            function prevSlide() {
+                sectionIndex = (sectionIndex - 1 + sections.length) % sections.length;
+                showSlide(sectionIndex);
+            }
+
+            next.addEventListener('click', function() {
+                clearInterval(autoSlideInterval);
+                nextSlide();
+                autoSlideInterval = setInterval(nextSlide, 5000);
+            });
+
+            prev.addEventListener('click', function() {
+                clearInterval(autoSlideInterval);
+                prevSlide();
+                autoSlideInterval = setInterval(nextSlide, 5000);
+            });
+
+            showSlide(sectionIndex);
+
+            let autoSlideInterval = setInterval(nextSlide, 5000);
+
+            slider.addEventListener('touchstart', function(e) {
+                startX = e.touches[0].pageX;
+                isSwiping = true;
+                clearInterval(autoSlideInterval);
+            });
+
+            slider.addEventListener('touchmove', function(e) {
+                if (isSwiping) {
+                    let moveX = e.touches[0].pageX;
+                    let difference = startX - moveX;
+
+                    if (difference > 50) {
+                        nextSlide();
+                        isSwiping = false;
+                        autoSlideInterval = setInterval(nextSlide, 5000);
+                    } else if (difference < -50) {
+                        prevSlide();
+                        isSwiping = false;
+                        autoSlideInterval = setInterval(nextSlide, 5000);
+                    }
+                }
+            });
+
+            slider.addEventListener('touchend', function() {
+                isSwiping = false;
+            });
+
+            slider.addEventListener('mousedown', function(e) {
+                startX = e.pageX;
+                isDragging = true;
+                clearInterval(autoSlideInterval);
+            });
+
+            slider.addEventListener('mousemove', function(e) {
+                if (isDragging) {
+                    let moveX = e.pageX;
+                    let difference = startX - moveX;
+
+                    if (difference > 50) {
+                        nextSlide();
+                        isDragging = false;
+                        autoSlideInterval = setInterval(nextSlide, 5000);
+                    } else if (difference < -50) {
+                        prevSlide();
+                        isDragging = false;
+                        autoSlideInterval = setInterval(nextSlide, 5000);
+                    }
+                }
+            });
+
+            slider.addEventListener('mouseup', function() {
+                isDragging = false;
+            });
+
+            slider.addEventListener('mouseleave', function() {
+                isDragging = false;
+            });
+        });
+        function changeImage(element, newSrc) {
+        element.querySelector('img').src = newSrc;
+        }
+
+        function restoreImage(element, originalSrc) {
+        element.querySelector('img').src = originalSrc;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+    // Select carousel and arrow icons
+    const carousel = document.querySelector(".carousel");
+    const arrowIcons = document.querySelectorAll(".project_wrapper i");
+
+    // Ensure carousel has images
+    if (carousel && carousel.querySelectorAll("img").length > 0) {
+        const firstImg = carousel.querySelectorAll("img")[0];
+
+        let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+        // Show or hide navigation icons based on carousel scroll position
+        const showHideIcons = () => {
+            let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+            arrowIcons[0].style.display = carousel.scrollLeft === 0 ? "none" : "block";
+            arrowIcons[1].style.display = carousel.scrollLeft >= scrollWidth ? "none" : "block";
+        };
+
+        // Handle button clicks to scroll carousel
+        arrowIcons.forEach(icon => {
+            icon.addEventListener("click", () => {
+                const firstImgWidth = firstImg.clientWidth + 14;
+                const scrollAmount = icon.id === "left" ? -firstImgWidth : firstImgWidth;
+                carousel.scrollLeft += scrollAmount;
+                setTimeout(showHideIcons, 60);
+            });
+        });
+
+        // Automatically adjust scroll position after dragging stops
+        const autoSlide = () => {
+            if (carousel.scrollLeft <= 0 || carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) return;
+
+            positionDiff = Math.abs(positionDiff);
+            const firstImgWidth = firstImg.clientWidth + 14;
+            const valDifference = firstImgWidth - positionDiff;
+
+            if (carousel.scrollLeft > prevScrollLeft) {
+                carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+            } else {
+                carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+            }
+            showHideIcons();
+        };
+
+        // Start dragging interaction
+        const dragStart = (e) => {
+            isDragStart = true;
+            prevPageX = e.pageX || e.touches[0].pageX;
+            prevScrollLeft = carousel.scrollLeft;
+        };
+
+        // Handle dragging movement
+        const dragging = (e) => {
+            if (!isDragStart) return;
+            e.preventDefault();
+            isDragging = true;
+            carousel.classList.add("dragging");
+            positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+            carousel.scrollLeft = prevScrollLeft - positionDiff;
+            showHideIcons();
+        };
+
+        // End dragging interaction
+        const dragStop = () => {
+            isDragStart = false;
+            carousel.classList.remove("dragging");
+            if (isDragging) {
+                isDragging = false;
+                autoSlide();
+            }
+        };
+
+        // Event listeners for drag interactions
+        carousel.addEventListener("mousedown", dragStart);
+        carousel.addEventListener("touchstart", dragStart);
+        document.addEventListener("mousemove", dragging);
+        carousel.addEventListener("touchmove", dragging);
+        document.addEventListener("mouseup", dragStop);
+        carousel.addEventListener("touchend", dragStop);
+            }
+        });
+        </script>
+        
+
+</body>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKSM</title>
+    <script src="nav.js" async></script>
+
+<style>
+    
+
+
+
+    /* Navigation Of hamburger Menu */
+    .flex_header{
+        display: flex;
+        gap: var(--gap,1rem);
+    }
+    
+    .grid_header {
+        display: grid;
+    }
+    
+    .logo_header {
+        margin: 4vh;
+        width: 4vw;
+        position: fixed;
+        z-index: 1000;
+    }
+
+
+
+    .primary-header_header {
+        align-items: center;
+        justify-content: space-between;
+        z-index: 99999;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+    
+    .sr-only_header{
+        display: none;
+    }
+    
+    .primary-navigation_header {
+        --gap: 4em;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        inset: 0 0 0 0%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        text-emphasis: 600;
+        backdrop-filter: blur(2rem);
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .center_esp{
+        display: flex;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 2em;
+        z-index: 1000;
+        justify-content: center;
+    }
+    .logo_espa {
+    height: 3vh;
+    }
+    .heading-container {
+    text-align: center;
+    width: 100%;
+    padding-top: 10vh;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.heading-container p {
+    text-align: center;
+    width: 100%;
+    padding-top: 3vh;
+    font-size: 1.2em;
+    margin: 0; /* Ensures no extra space between paragraphs */
+}
+
+.second {
+    padding-bottom: 6vh;
+    color: #68645e;
+    font-size: 1em;
+}
+
+.head {
+    font-size: 2em;
+    margin: 0;
+    padding: 10px;
+}
+
+.content-image-1 {
+    width: 100%; /* or a specific width like 300px */
+    height: auto; /* or a specific height like 200px */
+    object-fit: contain; /* or 'contain', 'fill', 'none', 'scale-down' */
+    display: block; /* Ensures proper layout */
+}
+
+.animated-line-container2 {
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;  
+}
+
+.animated-line2 {
+    width: 0;
+    height: 3px;
+    background-color: #817C76;
+    opacity: 0;
+    transition: width 2s ease-out, opacity 0.5s ease-out;
+    position: relative;
+}
+
+.animated-line-container2.animate .animated-line2 {
+    width: 20%; /* Adjust width as needed */
+    opacity: 1;
+}
+
+.primary-navigation_header[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    
+    .menu_link_header{
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 2em;
+        text-align: center;
+        margin: 20px 0 10px;
+        line-height: 2em;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        
+    }
+
+
+.menu-icon {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease-out;
+}
+
+/* Common styles for the lines */
+.menu-line {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+svg {
+    width: 60px;
+    cursor: pointer;
+}
+
+#top-line,
+#bottom-line,
+#middle-line {
+    transform-box: fill-box;
+    transform-origin: center;
+    width: 90px;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+#top-line{
+    transform: translateY(10px);
+}
+#middle-line{
+    transform: translateY(40px);
+}
+#bottom-line{
+    transform: translateY(70px);
+}
+
+
+
+.menu-icon-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.nav-toggle_header[aria-expanded="true"] #top-line {
+    transform: translateY(40px) rotate(45deg);
+}
+
+.nav-toggle_header[aria-expanded="true"] #bottom-line {
+    transform: translateY(40px) rotate(-45deg);
+}
+
+.nav-toggle_header[aria-expanded="true"] #middle-line {
+    opacity: 0;
+}
+
+@media (max-width: 1600px) {
+    .heading-container {
+        padding-top: 0vh;
+    }
+    .heading-container p{
+        font-size: 1em;
+    }
+    .head{
+    font-size: 1.4rem;
+    }
+    .nav-toggle_header{
+
+        right: 3em;
+
+    }
+    #top-line,
+    #bottom-line,
+    #middle-line {
+    width: 70px;
+    height: 7px;
+
+}
+
+#top-line{
+    transform: translateY(10px);
+}
+#middle-line{
+    transform: translateY(30px);
+}
+#bottom-line{
+    transform: translateY(50px);
+}
+
+    .nav-toggle_header[aria-expanded="true"] #top-line {
+        transform: translateY(30px) rotate(45deg); 
+        
+    }
+
+    .nav-toggle_header[aria-expanded="true"] #bottom-line {
+        transform: translateY(30px) rotate(-45deg); /* Adjust transformation */
+    }
+
+
+        
+}
+
+@media(max-width:1600px){
+  .logo_espa {
+    height: 2vh;
+    z-index: 1000;
+}
+
+}
+
+@media(max-width:500px){
+  .logo_espa {
+    height: 1vh;
+    z-index: 1000;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-out;
+}
+.nav-toggle_header{
+        top: 1em;
+        right: 1em;
+
+    }
+    #top-line,
+    #bottom-line,
+    #middle-line {
+    width: 70px;
+    height: 7px;
+
+    }
+
+    #top-line{
+        transform: translateY(10px);
+    }
+    #middle-line{
+        transform: translateY(30px);
+    }
+    #bottom-line{
+        transform: translateY(50px);
+    }
+}
+
+
+@media(max-width:1000px){
+    .menu_link_header{
+    font-size: 1.5em;
+}
+.heading-container p{
+    font-size: 0.7em;
+}
+}
+
+@media(max-width:600px){
+    .menu_link_header{
+    font-size: 1.1em;
+}
+
+
+}
+    
+    .menu_link_header:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #000;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+    
+    .menu_link_header:hover:after { 
+        width: 100%; 
+        left: 0; 
+      }
+    
+    .nav-toggle_header{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        width: 4em;
+        aspect-ratio: 1;
+        background: url('assets/.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 4em;
+        right: 1em;
+        top: 2em;
+        border: 0;
+    }
+
+    
+    .nav-toggle_header[aria-expanded="true"] {
+        background-image: url('assets/calndar.png');
+        width: 4em;
+    
+    }
+    @media (min-width: 2000px) {
+            .logo_header {
+                margin: 2vh;
+                width: 2vw;
+            }
+
+            .nav-toggle_header {
+                width: 3vw;
+                background-size: 3vw;
+                right: 2em;
+                top: 2em;
+            }
+
+
+            
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+    
+<div>
+    <header class="primary-header_header flex_header">
+        <button class="nav-toggle_header" aria-controls="primary-navigation_header" aria-expanded="false">
+                <svg class="menu-icon" viewBox="0 0 100 100" width="60">
+                    <rect id="top-line" class="menu-line" width="90" height="10" fill="#000" rx="5" ry="5"></rect>
+                    <rect id="middle-line" class="menu-line" width="70" height="10" fill="#000" rx="5" ry="5"></rect>
+                    <rect id="bottom-line" class="menu-line" width="90" height="10" fill="#000" rx="5" ry="5"></rect>
+                </svg>
+            
+            <span class="sr-only_header">Menu</span>
+        </button>
+
+        <nav>
+            <ul id="primary-navigation_header" data-visible="false" class="primary-navigation_header flex_header">
+                <li><a href="index.html" class="menu_link_header">Home</a></li>
+                <li><a href="portfolio.html" class="menu_link_header">Portfolio</a></li>
+                <li><a href="services.html" class="menu_link_header">Services</a></li>
+                <li><a href="contact.html" class="menu_link_header">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+</body>
+</html>

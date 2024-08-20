@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/aksm_logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio_styles.css">
+    <script src="nav.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="menu-container"></div>
+    <div>
+        <img src="assets/aksm_logo.png" class="logo_header" alt="AKSM Logo">
+    </div>
+
+    <div class="center_esp">
+        <a href="https://www.aksm.gr/wp-content/uploads/2023/12/aksm_antagonistikotita_webEN.pdf" target="_blank">
+            <img src="assets/e-bannerespaEÆÅÇ460X60.jpg" class="logo_espa" alt="ESPA Banner">
+        </a>
+    </div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+
+                // Once header.html content is inserted, execute nav.js
+                const script = document.createElement('script');
+                script.src = 'header_nav.js';
+                document.body.appendChild(script);
+            });
+            window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+            });
+    </script>
+
+    <div class="featured_projects" unique-script-id="w-w-dm-id">
+        <div class="container-block bg">
+            <div class="heading-container" style="margin-top: 4em;">
+                <h1 class="head">Portfolio</h1>
+                <div class="animated-line-container2">
+                    <div class="animated-line2"></div>
+                </div>
+                <p>Aksm has contributed to a variety of projects</p>
+            </div>
+
+            <div class="responsive-container-block opt-cont">
+                <p class="text-blk tab tab-active" data-filter="all">All</p>
+                <p class="text-blk tab" data-filter="scan2bim">SCAN2BIM</p>
+                <p class="text-blk tab" data-filter="const_ind_surv">CONSTRUCTION & INDUSTRIAL SURVEYING</p>
+                <p class="text-blk tab" data-filter="deformation_monitoring">DEFORMATION MONITORING</p>
+                <p class="text-blk tab" data-filter="uav_mapping">UVA MAPPING</p>
+            </div>
+
+            <div class="responsive-container-block content" id="portfolio-container">
+                <!-- Project content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <div id="footer__cont"></div>
+
+<script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer__cont').innerHTML = data;
+            });
+
+        fetch('project.json')
+            .then(response => response.json())
+            .then(projects => {
+                const container = document.getElementById('portfolio-container');
+
+                // Function to generate project HTML content
+                function generateProjectHTML(project) {
+                    return `
+                        <a href="project_details.html?id=${project.id}" class="link-wrapper ${project.typeofproject2}">
+                            <div class="responsive-container-block img ${project.typeofproject2}" id="${project.id}">
+                                <img class="im image-block" src="${project.image1}">
+                                <div class="responsive-container-block overlay overlay-visible"></div>
+                                <div class="responsive-container-block desc">
+                                    <p class="text-blk title">${project.title}, ${project.location}</p>
+                                    <p class="text-blk info">Completed Project ${project.completionyear} <br>${project.typeofproject.toUpperCase()}</p>
+                                </div>
+                            </div>
+                        </a>
+                    `;
+                }
+
+                // Insert projects into the DOM
+                projects.forEach(project => {
+                    container.innerHTML += generateProjectHTML(project);
+                });
+
+                // Initialize hover and tab functionality
+                initializeHoverAndTabFunctionality();
+            })
+            .catch(error => console.error('Error fetching projects:', error));
+
+        // Function to initialize hover and tab functionality
+        function initializeHoverAndTabFunctionality() {
+            // Hide description and overlay initially
+            $("[unique-script-id='w-w-dm-id'] .img .desc").hide();
+            $("[unique-script-id='w-w-dm-id'] .img .overlay").hide();
+
+            // Hover effects
+            $("[unique-script-id='w-w-dm-id'] .img").mouseenter(function() {
+                $(this).find('.overlay').fadeIn();
+                $(this).find('.desc').fadeIn();
+            }).mouseleave(function() {
+                $(this).find('.overlay').fadeOut();
+                $(this).find('.desc').fadeOut();
+            });
+
+            // Tab click handling
+            $("[unique-script-id='w-w-dm-id'] .tab").click(function() {
+                const value = $(this).attr('data-filter');
+                if (value === 'all') {
+                    $("[unique-script-id='w-w-dm-id'] .link-wrapper").show(500);
+                } else {
+                    $("[unique-script-id='w-w-dm-id'] .link-wrapper").hide(500); // Hide all first
+                    $("[unique-script-id='w-w-dm-id'] .link-wrapper." + value).show(500); // Show only matching elements
+                }
+                $(this).addClass('tab-active').siblings().removeClass('tab-active');
+            });
+
+            // Function to get query parameter value by name
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            // Get the filter query parameter
+            const filter = getQueryParam('filter');
+
+            // If there is a filter parameter, set the corresponding tab as active and show the projects
+            if (filter) {
+                const targetTab = document.querySelector(`.tab[data-filter="${filter}"]`);
+                if (targetTab) {
+                    $(targetTab).click(); // Trigger click to show the appropriate projects
+                }
+            } else {
+                // Default behavior if no filter parameter
+                document.querySelector('.tab[data-filter="all"]').classList.add('tab-active');
+            }
+        }
+    </script>
+</body>
+</html>

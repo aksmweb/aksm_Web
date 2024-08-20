@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<Style>
+
+#footer-main {
+  background-color: #F3F3F3;
+  padding: 60px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  .footer-grid {
+    padding-left: 20px;
+  }
+}
+
+
+
+/* --------------------------
+---------- Colour styles ----------- 
+---------------------------*/
+.contact-info {
+  font-size: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+
+
+section {
+  color: #000;
+  padding:20px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.contact-info img{
+  width: 15px;
+}
+.footer-grid h4{
+  font-size: 25px;
+  @include transition-property(font-size);  
+  @include transition-duration(0.5s);  
+}
+
+.footer-3 {
+  text-align: center;
+}
+
+.footer-3 .footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-3 .footer-links a {
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 29px;
+
+}
+
+.footer-3 .footer-links a:hover {
+  color: #a3a2a2;
+}
+
+
+.footer-2 {
+  text-align: center;
+}
+
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-link {
+  display: block;
+  width: 40px; /* Adjust icon width */
+  height: 40px; /* Adjust icon height */
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  margin-bottom: 20px;
+
+}
+
+.icon-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the entire icon is visible */
+}
+
+.icon-link:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Adjust icon size on click */
+.icon-link:active {
+  transform: scale(1.2); /* Scale up a bit more when clicked */
+}
+
+/* Optional: Add a subtle box-shadow for hover effect */
+.icon-link:hover img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.footer-1 {
+  text-align: center;
+}
+
+.additional-info {
+  margin-top: 20px; /* Adjust spacing between service list and additional info */
+}
+
+.additional-info img {
+  width: 120px; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; 
+  margin-top: 30px;
+}
+
+.additional-info p {
+  font-size: 20px;
+  color: #000; /* Adjust text color */
+}
+
+
+/* Media query for screens 600px and below */
+@media (max-width: 800px) {
+    .footer-grid {
+        font-size: 16px;
+    }
+
+    .contact-info {
+        font-size: 16px;
+    }
+
+    .footer-grid h4 {
+        font-size: 20px;
+    }
+
+    .additional-info p {
+        font-size: 16px;
+    }
+}
+
+</Style>
+<body>
+    
+    <footer id="footer-main">
+        <div class="footer-grid">
+         
+              <section class="footer-1">
+
+                <div class="additional-info">
+                    <img src="assets/aksm_logo.png" alt="Image Description">
+                    <p>All Content © 2016 Alexandros Karditsas</p>
+                </div>
+
+              </section>
+      
+             <section class="footer-2">
+                <h4>Social Media</h4>
+                <section class="footer-icons">
+                    <a href="index.html" target="_blank"class="icon-link">
+                        <img src="assets/icons/instagram-uxwing.svg" alt="insta">
+                    </a>
+                    <a href="https://www.linkedin.com/company/aksm/?originalSubdomain=gr" target="_blank"class="icon-link">
+                        <img src="assets/icons/linkedin-uxwing.svg" alt="linkedin">
+                    </a>
+                    <a href="https://www.facebook.com/p/AKSM-Land-Building-Industrial-Surveying-100049683236983/?_rdr" target="_blank" class="icon-link">
+                        <img src="assets/icons/facebook-uxwing.svg" alt="facebook">
+                    </a>
+                </section>
+                
+              </section>
+      
+              <section class="footer-3">
+                <h4>SiteMap</h4>
+                <div class="footer-links">
+                    <a href="index.html">HomePage</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </section>
+            
+      
+             <section class="footer-4">
+              <h4>Contact</h4>
+              <div class="contact-info">
+                <p>
+                    <img src="assets//icons/phone-wing.png" alt="Phone Icon">
+                     (30) 210 97 02 510
+                </p>
+                <p>
+                    <img src="assets/icons/smartphone-wing.png" alt="Mobile Icon" style="width: 12px;">
+                    (30) 694 47 74 491
+                </p>
+                <p>
+                    <img src="assets/icons/email-uxwing.svg" alt="Email Icon">
+                    info@aksm.gr
+                </p>
+                <p>
+                    <img src="assets/icons/maps-pin-uxwing.svg" alt="Location Icon">
+                    392 Mesogion Avenue 15341, Agia Paraskevi, Athens
+                </p>
+            </div>
+            
+            
+              </section>
+         </div>
+        
+      </footer>
+
+    
+</body>
+</html>

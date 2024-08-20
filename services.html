@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_services.css">
+    <link rel="icon" href="assets/aksm_logo.png">
+    <script src="nav.js" ></script>
+    <title>Services</title>
+</head>
+
+<body>
+
+    <div id="menu-container"></div>
+    <div>
+        <img src="assets/aksm_logo.png" class="logo_header" alt=" ">
+    </div>
+    
+    <div class="separator2_backround"></div>
+
+
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+
+                // Once header.html content is inserted, execute nav.js
+                const script = document.createElement('script');
+                script.src = 'header_nav.js';
+                document.body.appendChild(script);
+            });
+
+            window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+            });
+    </script>
+
+
+
+<a id="top"></a>
+
+    <div class="center_esp">
+        <a href="https://www.aksm.gr/wp-content/uploads/2023/12/aksm_antagonistikotita_webEN.pdf" target="_blank">
+        <img src="assets/e-bannerespaEÆÅÇ460X60.jpg" class="logo_espa" alt=" ">
+        </a>
+    </div>
+    <div class="service-container">
+
+        <div class="heading-container" >
+            <h1 class="head">Services</h1>
+            <div class="animated-line-container2">
+                <div class="animated-line2"></div>
+            </div>
+            <p>Aksm provides a variety of services by trusted profesionals</p>
+        </div>
+            
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="assets/backround_img/3dcube.svg">
+                    </div>
+                    <div class="contentBx">
+                        <h3>SCAN2BIM</h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li>
+                        <a href="#scan2bim-section">Learn More</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="assets/backround_img/const_ind_icon.svg">
+                    </div>
+                    <div class="contentBx">
+                        <h3>CONSTRUCTION & INDUSTRIAL SURVEYING</h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li>
+                        <a href="#ci_surveying">Learn More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="assets/backround_img/deformation.svg">
+                    </div>
+                    <div class="contentBx">
+                        <h3>DEFORMATION MONITORING</h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li>
+                        <a href="#deformation-monitoring">Learn More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="assets/backround_img/drone.svg">
+                    </div>
+                    <div class="contentBx">
+                        <h3>UAV Mapping</h3>
+                    </div>
+                </div>
+                <ul class="sci">
+                    <li>
+                        <a href="#UVA_mapping">Learn More</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+
+    <div class="separator3_backround"></div>
+
+
+    <button id="scrollTopBtn" class="scroll_top" style="display: none;"></button>
+
+
+    <div id="scan2bim-section" class="about_services">
+
+
+        <div class="heading-container second">
+            <h1 class="head">Scan2Bim</h1>
+            <div class="animated-line-container2">
+                <div class="animated-line2">
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="services_flex_container">
+            <img src="assets/backround_img/3dcube.svg" width="120px">
+
+            <div class="services_text-left">
+                <p>Scan2Bim is the process of 3D Laser Scanning a physical space,
+                     site or a construction in order to create a highly accurate 
+                     digital representation.  The digital model is including all 
+                     the information of the surfaces, the  constructions, the 
+                     matterials and the colours. The representation can  be used 
+                     for designing, assessing progress or evaluating options. </p>
+
+            </div>
+
+            <div id="services_wrapper1" class="services_wrapper">
+                <div id="services_content-wrapper">
+                    <div>
+                        <div class="services_additional-text">
+                        </div>
+                    </div>
+                </div>
+                <hr class="services_vertical-separator">
+                
+            </div>
+        </div>
+
+        <div class="news2">
+        <div id="carousel1" class="news-container">
+            <div class="carousel2">
+                <div class="carousel-controls">
+                    <button class="carousel-prev"></button>
+                    <button class="carousel-next"></button>
+                </div>
+                <div class="carousel-slider2">
+
+
+                    <section>
+                        <div class="section">
+                        <div class="content-left">
+                          <div class="content-text">
+                            <h2 class="center">Applications of Scan2Bim:</h2> 
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+                                <p>
+                                    Site Analysis<Br><Br>
+                                    Refurbishment<Br><Br>
+                                    Heritage Archive<Br><Br>
+                                    Construction Verification-Monitoring<Br><Br>
+                                    Deformation Monitoring<Br><Br>
+                                    Condition Survey<Br><Br>
+                                    Clash Detection<Br><Br>
+                                    Visualisation
+                                </p>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="content-right">
+                            <div class="big-image-wrapper">
+                            <img backround-image="fit" src="assets/services/scan2bim_3.png" alt="Image 1">
+                        </div>
+                      </div>
+                    </section>
+
+                    <section>
+                        <div class="section">
+                        <div class="content-left">
+                          <div class="content-text">
+                            <h2 class="center">NavVis VLX 3</h2> 
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+                                <p>
+                                    NavVis VLX 3 belongs to the category of 3D imaging equipment. It is the first 
+                                    device in its class that can be worn.
+                                    Wearing it, the user walks through the space and it performs 3D measurements
+                                    with the two integrated LiDAR sensors. At the same time it can
+                                    monitor what is captured in real time with the help of the built-in
+                                    screen. 
+                                    The result of the imprinting are files with dense point clouds that after
+                                    processing with specialized software, aims to create a three-dimensional
+                                    model or image depicting buildings, environment, spaces with three
+                                    dimensions; Length width and height.
+                                </p>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="content-right">
+                            <div class="big-image-wrapper">
+                            <img  backround-image="fit" src="assets/services/scan2bim_2.png" alt="Image 1">
+                        </div>
+                      </div>
+                    </section>
+
+                    <section>
+                        <div class="section">
+                        <div class="content-left">
+                          <div class="content-text">
+                            <h2 class="center">Applications of Scan2Bim:</h2> 
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+                                <p>
+                                    Site Analysis<Br><Br>
+                                    Refurbishment<Br><Br>
+                                    Heritage Archive<Br><Br>
+                                    Construction Verification-Monitoring<Br><Br>
+                                    Deformation Monitoring<Br><Br>
+                                    Condition Survey<Br><Br>
+                                    Clash Detection<Br><Br>
+                                    Visualisation
+                                </p>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="content-right">
+                            <div class="big-image-wrapper">
+                            <img backround-image="fit" src="assets/services/scan2bim.png" alt="Image 1">
+                        </div>
+                      </div>
+                    </section>
+
+
+                </div>
+            </div>
+            
+        </div>
+
+
+    </div>
+    <a href="portfolio.html?filter=scan2bim" style="text-decoration: none;">
+        <div class="box-3">
+            <div class="btn btn-three">
+              <span>Related Projects</span>
+            </div>
+          </div>
+        </a>
+    </div>
+
+
+    <div class="separator3_backround"></div>
+
+
+    <div id="ci_surveying" class="about_services">
+        <div class="heading-container second">
+            <h1 class="head">CONSTRUCTION & INDUSTRIAL SURVEYING
+            </h1>
+            <div class="animated-line-container2">
+                <div class="animated-line2">
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="services_flex_container">
+            <img src="assets/backround_img/const_ind_icon.svg" width="120px">
+
+            <div class="services_text-left">
+                <p>In today’s complex construction environment our innovative expertise, 
+                    analysis and carefully crafted approach can bring security to
+                     construction process. AKSM is taking part in all stages of 
+                     construction starting from the initial design through correlation 
+                     and condition surveys until the final operation through construction 
+                     verification survey.Our experienced staff at AKSM supports manufacturers in a wide range of construction process in order to meet specifications in terms of precision. We provide measurement data with high precision for accurate information on the size, shape and position of objects. We can carry out spot on measurement on site with the advantage of the latest technology.</p>
+
+            </div>
+
+            <div id="services_wrapper1" class="services_wrapper">
+                <div id="services_content-wrapper">
+                    <div>
+                        <div class="services_additional-text">
+                        </div>
+                    </div>
+                </div>
+                <hr class="services_vertical-separator">
+                
+            </div>
+        </div>
+
+        <div class="news2">
+        <div id="carousel22" class="news-container">
+            <div class="carousel2">
+                <div class="carousel-controls">
+                    <button class="carousel-prev"></button>
+                    <button class="carousel-next"></button>
+                </div>
+                <div class="carousel-slider2">
+                <section>
+                    <div class="section" >
+                        <div class="content-left">
+                        <div class="content-text">
+                            <h2 class="center">CONDITION & LAND SURVEYS</h2> 
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+                                <p>
+                                    Condition Surveys present an accurate recording of the existing condition of a building or surrounding area. A condition survey provides an assessment of physical property conditions.
+
+                                    The survey should identify deficiencies and maintenance issues including, but not limited to structural, mechanical, electrical, plumbing, fire protection, site layout, site utilities, storm water management, soil erosion and life safety systems.
+                                    
+                                    To facilitate an informed decision-making process, a condition survey should result in a clear understanding of the current condition of operating systems by a client.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        </div>
+                        <div class="content-right">
+                        <div class="big-image-wrapper">
+                            <img class="content-image-1" src="assets/services/const_1.jpg" alt="Image 1">
+                        </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section" id="cs_section">
+                        <div class="content-left">
+                            <div class="content-text">
+                            <h2 class="center">ENGINEERING SURVEYS</h2> 
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+                                <p>
+                                    <b>Control Network Establishment:</b><br>
+                                    We provide high accuracy network creation by using the techniques that meet the project’s needs.
+
+                                    <br><br><b>Setting Out:</b><br>
+                                    We align the position of the elements to be constructed, ensuring the most complex designs can be built with accuracy.
+
+                                    <br><br><b>Construction Verification:</b><br>
+                                    We monitor and record the existing condition and timing of significant operation on the construction site through Quality Control records in order to ensure the projects’ progress.
+
+                                    <br><br><b>Structural Monitoring:</b><br>
+                                    By using high-end equipment, software and methodologies, systematic measurements are performed in order to track the alteration in the shape of our element.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <div class="big-image-wrapper">
+                            <img class="content-image-1" src="assets/services/const_2.jpg" alt="Image 1">
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="section" id="cs_section">
+                            <div class="content-left">
+                                <div class="content-text">
+                                <h2 class="center">CORRELATION SURVEYS</h2> 
+                                <div class="vertical-line-container">
+                                    <div class="vertical-line"></div>
+                                    <p>
+                                        Correlation Surveys assure that any underground structure does not obstruct or interfere with proposed designs. This can be accomplished by implementing high accuracy applications which allow us to obtain precise measurement data.
+
+                                        When a development involves underground works, it is essential that the underground control networks must be connected and orientated into the same coordinate system as the surface networks.
+
+                                        As a consequence, we achieve accurate and reliable geospatial correlation of items above and below ground. These help us to avoid substantial cost imputations, considerable damage and construction delays.
+                                                                                
+                                    </p>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            <div class="content-right">
+                                <div class="big-image-wrapper">
+                                <img class="content-image-1" src="assets/services/const_4.jpg" alt="Image 1">
+                            </div>
+                                
+                            </div>
+                            </div>
+                    </section>
+
+                    <section>
+                        <div class="section" id="cs_section">
+                            <div class="content-left">
+                                <div class="content-text">
+                                <h2 class="center">STEEL CONSTRUCTION SURVEYS
+                                </h2> 
+                                <div class="vertical-line-container">
+                                    <div class="vertical-line"></div>
+                                    <p>
+                                        In the field of steelwork fabrication and construction, using 3D laser scanning technology provides quick and accurate collection of true three-dimensional information of components and creates true-to-scale realistic images of them. Collected laser scanning data can be analyzed through available software, which allows an accurate determination of all dimensions.                                             
+                                    </p>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            <div class="content-right">
+                                <div class="big-image-wrapper">
+                                <img class="content-image-1" src="assets/services/const_12.jpg" alt="Image 1">
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="section" id="cs_section">
+                                <div class="content-left">
+                                    <div class="content-text">
+                                    <h2 class="center">PLANT CONSTRUCTION SURVEYS
+                                    </h2> 
+                                    <div class="vertical-line-container">
+                                        <div class="vertical-line"></div>
+                                        <p>
+                                            AKSM provides all the required recording work for surveys in plant construction. In this context, we mark and signalize individual points and axes required for the construction of planned buildings and plants.
+
+                                            Setting out can be performed by our trained staff either conventionally with total-station or by means of laser tracker in special cases. After construction and installation of the plant we check and document the finalized project thereby assuring the quality of the entire construction project in terms of an as-built documentation.                                                </p>
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="content-right">
+                                    <div class="big-image-wrapper">
+                                    <img class="content-image-1" src="assets/services/const_13.jpg" alt="Image 1">
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                        </section>
+                        <section>
+                            <div class="section" id="cs_section">
+                                <div class="content-left">
+                                    <div class="content-text">
+                                    <h2 class="center">SHIPYARDS & SHIPBUILDING SURVEYS
+                                    </h2> 
+                                    <div class="vertical-line-container">
+                                        <div class="vertical-line"></div>
+                                        <p>
+                                            We offer a wide array of surveying services to the shipping industry, including:<ul>
+                                                <li>ship hull shape, dimensional analysis, control and verification</li>
+                                                <li>hull as build for insurance inspection and damage analysis</li>
+                                                <li>model creation for parts installation and assembly</li>
+                                                <li>deformation analysis and report creation on tanks</li>
+                                            </ul> 
+                                                Regarding to stern tube alignment our services include: 
+                                                <ul>
+                                                <li>3D stern tube casting and bearing verification in Hull Cartesian Coordinate System</li>
+                                                <li> M/E foundation verification in Hull Cartesian Coordinate System.</li>
+                                        </p>
+
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="content-right">
+                                    <div class="big-image-wrapper">
+                                    <img class="content-image-1" src="assets/services/ship.jpg" alt="Image 1">
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="section" id="cs_section">
+                                    <div class="content-left">
+                                        <div class="content-text">
+                                        <h2 class="center">TUNNELING & MINING SURVEYS
+                                        </h2> 
+                                        <div class="vertical-line-container">
+                                            <div class="vertical-line"></div>
+                                            <p>
+                                                The demanding task of controlling tunnel and shaft heading comprises all the surveying required for the construction of underground and mining structure. AKSM implements high accuracy applications which allow us to survey with pinpoint accuracy for underground construction projects.
+
+                                                We provide customer-suited solutions for conventional tunnel guidance and machine guidance. Specifically, we offer a wide array of surveying and mapping services to the tunneling and underground construction community, including project-wide geodetic control networks, control and alignment verification for tunnel boring machines, deformation monitoring, control transfer through vertical shafts of tunnels, and tunnel alignment verification using precision survey techniques.</p></div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="content-right">
+                                        <div class="big-image-wrapper">
+                                        <img class="content-image-1" src="assets/services/const_11.jpg" alt="Image 1">
+                                        </div>
+                                        
+                                    </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="section" id="cs_section">
+                                        <div class="content-left">
+                                            <div class="content-text">
+                                            <h2 class="center">BRIDGE SURVEYS
+                                            </h2> 
+                                            <div class="vertical-line-container">
+                                                <div class="vertical-line"></div>
+                                                <p>
+                                                    Bridge surveying is necessary to locate a site, obtain information for design, and furnish lines and grades for construction. A reconnaissance survey is made at all possible sites. A preliminary survey is made at the best site to establish horizontal and vertical control and to obtain information for the bridge design and construction planning. A location survey is made to lay out the bridge according to the bridge plans. During the actual construction, the surveyor establishes any additional lines and grades required by the construction foreman.
+
+                                                    The accuracy of measurements and the number and type of survey markers vary with the degree of precision demanded and the type of construction. Variations may range from hand-level and sketch-board work for a tactical bridge to precise measurements for a prefabricated steel bridge.</p></div>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="content-right">
+                                            <div class="big-image-wrapper">
+                                            <img class="content-image-1" src="assets/services/3.jpg" alt="Image 1">
+                                            </div>
+                                            
+                                        </div>
+                                        </div>
+                                </section>
+
+                </div>
+            </div>
+            </div>
+        </div>
+        <a href="portfolio.html?filter=const_ind_surv" style="text-decoration: none;">
+            <div class="box-3">
+                <div class="btn btn-three">
+                  <span>Related Projects</span>
+                </div>
+              </div>
+            </a>
+    </div>
+
+    <div class="separator3_backround"></div>
+
+
+    
+    <div id="deformation-monitoring" class="about_services">
+        
+        <div class="heading-container second">
+            <h1 class="head">DEFORMATION MONITORING</h1>
+            <div class="animated-line-container2">
+                <div class="animated-line2">
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="services_flex_container">
+            <img src="assets/backround_img/deformation.svg" width="120px">
+
+            <div class="services_text-left">
+                <p>Analysis and carefully crafted approach can bring security to construction process.
+                     AKSM implements high accuracy applications which allow us to obtain precious 
+                     indications of the behavior of a structure and of the fields behaviors on which 
+                     the site is situated.
+                    By using high precision equipment, software and methodologies and especially 
+                    with many years of experience in the field of deformation monitoring, 
+                    the company can provide results, to meet the requirements of delicate projects.
+                 </p>
+
+            </div>
+
+            <div id="services_wrapper1" class="services_wrapper">
+                <div id="services_content-wrapper">
+                    <div>
+                        <div class="services_additional-text">
+                        </div>
+                    </div>
+                </div>
+                <hr class="services_vertical-separator">
+                
+            </div>
+        </div>
+
+        <div class="news2">
+        <div id="carousel3" class="news-container">
+            <div class="carousel2">
+                <div class="carousel-controls">
+                    <button class="carousel-prev"></button>
+                    <button class="carousel-next"></button>
+                </div>
+                <div class="carousel-slider2">
+
+
+                    <section>
+                        <div class="section">
+                        <div class="content-left">
+                          <div class="content-text">
+                            <h2 class="center">LEVELING MEASUREMENTS</h2> 
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+                                <p>
+                                    The deformation monitoring of a land or construction represents 
+                                    a systematic action of observation, measurement and analysis of 
+                                    the way they respond to influence of surrounding agents, taking 
+                                    permanently in consideration the projection parameters of 
+                                    functionality, stability and safety. For a proper monitoring 
+                                    of construction behavior in time constructions that are subjects 
+                                    to experimental solicitation obtaining observations in a relative 
+                                    short time in highly required. By using high precision equipment,
+                                     software and methodologies and especially with many years of
+                                      experience in the field of deformation monitoring, AKSM can 
+                                      provide results, to meet the requirements of delicate projects.
+                                </p>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="content-right">
+                          <div class="big-image-wrapper">
+                            <img class="content-image-1" src="assets/services/def_1.jpg" alt="Image 1">
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section>
+                        <div class="section">
+                        <div class="content-left">
+                          <div class="content-text">
+                            <h2 class="center">CONVENTIONAL 3D TOPOGRAPHICAL MEASURING SYSTEMS</h2> 
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+                                <p>
+                                    Three dimensional displacement measurements (3D) are carried out within the Zone 
+                                    of influence in order to determine the movement on adjacent to the project 
+                                    structures and buildings. Reflectors are installed in tunnels, structures, etc.
+                                     and the measurements are made with high precision total stations by the method of 
+                                     free station.The reference network of the points, that is used for 3D measurements,
+                                      consists of reference points with permanent labeling at the locations outside the 
+                                      zone of influence of the works or at locations remote to the excavation faces. 
+                                      The reference network will be checked at regular time intervals. All the measurements 
+                                      are corrected by the impact of the pressure and temperature diffractions. The precision 
+                                      of the measurements of total displacements is ± 2mm.
+                                </p>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="content-right">
+                          <div class="big-image-wrapper">
+                            <img class="content-image-1" src="assets/services/def_2.jpg" alt="Image 1">
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section>
+                        <div class="section">
+                        <div class="content-left">
+                          <div class="content-text">
+                            <h2 class="center">AUTOMATED MONITORING SYSTEM (AMS) OF REAL TIME TOTAL DISPLACEMENTS(3D)</h2> 
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+                                <p>
+                                    The system consists of a high accuracy networked robotic total stations and 
+                                    prisms located on the point of interest. This system ensures valuable and 
+                                    timely monitoring of the displacements, providing high measurements density, 
+                                    simultaneous wireless transmission and entry of the results into the MDB 
+                                    system to ensure minimal time between their reading and their evaluation.
+                                    The total stations are remotely controlled by software and are capable of:
+                                    • Following a pre-programmed operation
+                                    • Allowing changes in the measurement regime to be implemented , including the measurement cycle
+                                    • Providing continuous data for one point
+
+                                </p>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="content-right">
+                          <div class="big-image-wrapper">
+                            <img class="content-image-1" src="assets/services/2.jpg" alt="Image 1">
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <a href="portfolio.html?filter=deformation_monitoring" style="text-decoration: none;">
+        <div class="box-3">
+            <div class="btn btn-three">
+              <span>Related Projects</span>
+            </div>
+          </div>
+        </a>
+    </div>
+
+    <div class="separator3_backround"></div>
+
+
+
+    <div id="UVA_mapping" class="about_services">
+        <div class="heading-container second">
+            <h1 class="head">UAV MAPPING
+            </h1>
+            <div class="animated-line-container2">
+                <div class="animated-line2">
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="services_flex_container">
+            <img src="assets/backround_img/drone.svg" width="120px">
+
+            <div class="services_text-left">
+                <p>UAV mapping involves using drones to capture aerial images 
+                    and data of construction sites. This technology enhances project planning, monitoring,
+                     and management by providing high-resolution maps, 3D models, and real-time progress 
+                     updates, ultimately improving efficiency, accuracy, and safety in construction 
+                     projects. </p>
+
+            </div>
+
+            <div id="services_wrapper1" class="services_wrapper">
+                <div id="services_content-wrapper">
+                    <div>
+                        <div class="services_additional-text">
+                        </div>
+                    </div>
+                </div>
+                <hr class="services_vertical-separator">
+                
+            </div>
+        </div>
+
+        <div class="news2">
+        <div id="carousel4" class="news-container">
+            <div class="carousel2">
+                <div class="carousel-controls">
+                    <button class="carousel-prev"></button>
+                    <button class="carousel-next"></button>
+                </div>
+                <div class="carousel-slider2">
+
+
+                    <section>
+                        <div class="section">
+                        <div class="content-left">
+                          <div class="content-text">
+                            <h2 class="center">Site Surveying and Planning</h2> 
+
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+                                    <h3>Applications:</h3>
+                                        <p><strong>Topographic Mapping:</strong> Create detailed 2D and 3D maps of the terrain to understand site conditions before construction begins.</p>
+                                        <p><strong>Boundary Surveys:</strong> Establish clear property lines and boundaries.</p>
+                                        <p><strong>Volumetric Calculations:</strong> Measure stockpile volumes and earthworks accurately.</p>
+                                    <h3>Benefits:</h3>
+                                        <p>Reduces the time and cost compared to traditional surveying methods.</p>
+                                        <p>Provides precise data for better decision-making and project planning.</p>
+                                        <p>Enhances accuracy in volume estimation, reducing material costs.</p>
+
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="content-right">
+                            <div class="big-image-wrapper">
+                            <img class="content-image-1" src="assets/backround_img/Ktima_2.png" alt="Image 1">
+                        </div>
+                      </div>
+                    </section>
+                    <section>
+                        <div class="section">
+                        <div class="content-left">
+                          <div class="content-text">
+                            <h2 class="center">Progress Monitoring and Reporting</h2> 
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+                                    <h3>Applications:</h3>
+                                    <div class="applications">
+                                        <p><strong>Progress Photos:</strong> Regularly capture aerial images to document the construction progress.</p>
+                                        <p><strong>3D Models and Orthomosaics:</strong> Generate up-to-date models and maps to visualize project status.</p>
+                                        <p><strong>Inspection Reports:</strong> Identify potential issues early through detailed visual inspections.</p>
+                                    </div>
+                                    <h3>Benefits:</h3>
+                                    <div class="benefits">
+                                        <p>Facilitates real-time monitoring and quick decision-making.</p>
+                                        <p>Improves communication with stakeholders by providing visual progress reports.</p>
+                                        <p>Enhances project transparency and accountability.</p>
+                                    </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="content-right">
+                            <div class="big-image-wrapper">
+                            <img class="content-image-1" src="assets/portfolio/riviera_tower/riviera3.png" alt="Image 1">
+                        </div>
+                      </div>
+                    </section>
+
+                    <section>
+                        <div class="section">
+                        <div class="content-left">
+                          <div class="content-text">
+                            <h2 class="center">Site Safety and Inspection</h2> 
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+                                    <h3>Applications:</h3>
+                                    <div class="applications">
+                                        <p><strong>Hazard Identification:</strong> Spot potential safety hazards from an aerial perspective.</p>
+                                        <p><strong>Inspection of Hard-to-Reach Areas:</strong> Assess structural integrity in high or dangerous locations without putting workers at risk.</p>
+                                        <p><strong>Thermal Imaging:</strong> Detect heat leaks, electrical issues, and other anomalies.</p>
+                                    </div>
+                                    <h3>Benefits:</h3>
+                                    <div class="benefits">
+                                        <p>Enhances worker safety by minimizing the need for manual inspections in hazardous areas.</p>
+                                        <p>Reduces inspection time and increases the frequency of safety checks.</p>
+                                        <p>Identifies and mitigates risks promptly.</p>
+                                    </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="content-right">
+                            <div class="big-image-wrapper">
+                            <img class="content-image-1" src="assets/backround_img/kTIMA.png" alt="Image 1">
+                        </div>
+                      </div>
+                    </section>
+
+                    <section>
+                        <div class="section">
+                        <div class="content-left">
+                          <div class="content-text">
+                            <h2 class="center">Environmental Monitoring</h2> 
+                            <div class="vertical-line-container">
+                                <div class="vertical-line"></div>
+
+                                    <h3>Applications:</h3>
+                                    <div class="applications">
+                                        <p><strong>Erosion and Sediment Control:</strong> Monitor soil erosion and sediment displacement.</p>
+                                        <p><strong>Vegetation and Habitat Surveys:</strong> Track changes in vegetation and wildlife habitats.</p>
+                                        <p><strong>Water Management:</strong> Inspect drainage patterns and water bodies on site.</p>
+                                    </div>
+                                    <h3>Benefits:</h3>
+                                    <div class="benefits">
+                                        <p>Ensures compliance with environmental regulations and standards.</p>
+                                        <p>Helps in the sustainable management of construction sites.</p>
+                                        <p>Provides data for environmental impact assessments.</p>
+                                    </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-right">
+                            <div class="big-image-wrapper">
+                            <img class="content-image-1" src="assets/backround_img/OKXE.png" alt="Image 1">
+                        </div>
+                      </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <a href="portfolio.html?filter=uav_mapping" style="text-decoration: none;">
+            <div class="box-3">
+                <div class="btn btn-three">
+                  <span>Related Projects</span>
+                </div>
+              </div>
+            </a>
+    </div>
+
+
+    <div id="footer__cont"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer__cont').innerHTML = data;
+
+        });
+
+document.addEventListener("DOMContentLoaded", function() {
+    function initializeCarousel(carouselId) {
+        const carousel = document.getElementById(carouselId);
+        const nextButton = carousel.querySelector('.carousel-next');
+        const prevButton = carousel.querySelector('.carousel-prev');
+        const slider = carousel.querySelector('.carousel-slider2');
+        const sections = Array.from(slider.children);
+        let sectionIndex = 0;
+        let startX;
+        let isSwiping = false;
+        let isDragging = false;
+
+        function showSlide(index) {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            sectionIndex = (sectionIndex + 1) % sections.length;
+            showSlide(sectionIndex);
+        }
+
+        function prevSlide() {
+            sectionIndex = (sectionIndex - 1 + sections.length) % sections.length;
+            showSlide(sectionIndex);
+        }
+
+        nextButton.addEventListener('click', function() {
+            clearInterval(autoSlideInterval); // Clear the interval to reset the timer
+            nextSlide();
+            autoSlideInterval = setInterval(nextSlide, 5000); // Restart the interval
+        });
+
+        prevButton.addEventListener('click', function() {
+            clearInterval(autoSlideInterval); // Clear the interval to reset the timer
+            prevSlide();
+            autoSlideInterval = setInterval(nextSlide, 5000); // Restart the interval
+        });
+
+        // Initialize the first slide
+        showSlide(sectionIndex);
+
+        // Set up automatic slide changes
+        let autoSlideInterval = setInterval(nextSlide, 5000);
+
+        // Swipe functionality
+        slider.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].pageX;
+            isSwiping = true;
+            clearInterval(autoSlideInterval); // Pause auto-slide on touch
+        });
+
+        slider.addEventListener('touchmove', function(e) {
+            if (isSwiping) {
+                let moveX = e.touches[0].pageX;
+                let difference = startX - moveX;
+
+                if (difference > 50) {
+                    nextSlide();
+                    isSwiping = false;
+                    autoSlideInterval = setInterval(nextSlide, 5000); // Restart auto-slide
+                } else if (difference < -50) {
+                    prevSlide();
+                    isSwiping = false;
+                    autoSlideInterval = setInterval(nextSlide, 5000); // Restart auto-slide
+                }
+            }
+        });
+
+        slider.addEventListener('touchend', function() {
+            isSwiping = false;
+        });
+
+        // Drag functionality
+        slider.addEventListener('mousedown', function(e) {
+            startX = e.pageX;
+            isDragging = true;
+            clearInterval(autoSlideInterval); // Pause auto-slide on drag
+        });
+
+        slider.addEventListener('mousemove', function(e) {
+            if (isDragging) {
+                let moveX = e.pageX;
+                let difference = startX - moveX;
+
+                if (difference > 50) {
+                    nextSlide();
+                    isDragging = false;
+                    autoSlideInterval = setInterval(nextSlide, 5000); // Restart auto-slide
+                } else if (difference < -50) {
+                    prevSlide();
+                    isDragging = false;
+                    autoSlideInterval = setInterval(nextSlide, 5000); // Restart auto-slide
+                }
+            }
+        });
+
+        slider.addEventListener('mouseup', function() {
+            isDragging = false;
+        });
+
+        slider.addEventListener('mouseleave', function() {
+            isDragging = false;
+        });
+    }
+
+    // Initialize carousels
+    initializeCarousel('carousel1');
+    initializeCarousel('carousel22');
+    initializeCarousel('carousel3');    
+    initializeCarousel('carousel4');
+
+
+    // Get the button
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    scrollTopBtn.addEventListener('click', function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
+});
+
+
+
+    </script>
+</body>
+</html>
